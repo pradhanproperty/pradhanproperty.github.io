@@ -1,1 +1,27 @@
-theme: jekyll-theme-architect
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://pradhanproperty.github.io" # the base hostname & protocol for your site
+enforce_ssl: https://pradhanproperty.github.io
+description: Buy, sell and rent properties in Indore.
+image: \\www.macmillanfilms.com/images/logo.svg
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-octicons
+  - jekyll-sitemap
+
+jekyll-mentions:
+    base_url: https://github.com
+
+compress_html:
+    ignore:
+        envs:
+        - development
+        - stage
+
+sass:
+    style: compressed
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "FAQ.md", "econ-ipsum*","01projects.md"]
